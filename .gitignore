@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+performance.log
+eye_cnn.h5
+eye_cnn.onnx
+dataset/
