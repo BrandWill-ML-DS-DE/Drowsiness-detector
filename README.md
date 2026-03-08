@@ -62,3 +62,31 @@ The system is evaluated via `evaluate.py` using a full classification report (**
 git clone [https://github.com/your-username/drowsiness-detection.git](https://github.com/your-username/drowsiness-detection.git)
 cd drowsiness-detection
 pip install -r requirements.txt
+```
+### 2. Training (Optional)
+
+If you wish to retrain the eye classifier:
+```bash
+python train_cnn.py
+```
+### 3. Run Inference
+
+```bash
+python app.py
+```
+
+---
+
+## 📊 Results
+
+| Metric | Value |
+|--------|-------|
+| Accuracy | X |
+   
+---
+
+## 📉 Future Roadmap
+
+* **[ ] Yawn Detection:** Add landmark tracking for the mouth to detect early physiological signs of fatigue.
+* **[ ] Infrared (NIR) Support:** Optimize the preprocessing pipeline for Near-Infrared camera inputs for total darkness operation.
+* **[ ] INT8 Quantization:** Implement post-training quantization during ONNX export for ultra-low power consumption on microcontrollers.
